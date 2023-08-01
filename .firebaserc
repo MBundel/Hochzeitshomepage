@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "weddinghp-4e13b": {
+      "hosting": {
+        "weddingHP": [
+          "weddinghp-4e13b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "weddinghp-4e13b"
+  }
+}

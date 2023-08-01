@@ -1,0 +1,31 @@
+@use "../colors" as *;
+@import "./fonts";
+.buttonClass {
+  background: $accentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: $fontLight;
+  font-size: 25px;
+  font-family:  "printFont" , serif;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+
+  &:hover{
+    background: $secondAccent;
+    box-shadow: 2px 2px 10px 1px $backgroundColor;
+
+  }
+  &:active{
+    color: $mainColor;
+  }
+  &_b{
+    @extend .buttonClass;
+    height: 60px;
+    width: 220px;
+    font-size: 40px;
+  }
+}

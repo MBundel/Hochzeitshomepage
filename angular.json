@@ -91,8 +91,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "weddingHP:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f65cc0f6-0a04-4f87-a30e-97ef62320a47"
   }
 }
