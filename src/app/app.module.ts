@@ -10,14 +10,18 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { AngularFireModule} from '@angular/fire/compat';
 import { NavbarComponent } from './site_components/navbar/navbar.component';
 import { FooterComponent } from './site_components/footer/footer.component';
-import { HomeComponent } from './sites/home/home.component'
+import { HomeComponent } from './sites/home/home.component';
+import { PortfolioComponent } from './sites/portfolio/portfolio.component';
+import { ContactComponent } from './sites/contact/contact.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

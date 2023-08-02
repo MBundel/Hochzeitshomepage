@@ -1,0 +1,18 @@
+@use "../colors" as *;
+@import "./fonts";
+
+.description {
+  & > h2 {
+    font-family: scriptin, cursive;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: $backgroundColor;
+    text-align: center;
+  }
+
+  & > p {
+    font-family: writtenFont, cursive;
+    font-size: 3em;
+  }
+
+}

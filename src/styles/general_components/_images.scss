@@ -1,0 +1,32 @@
+@use "../colors" as *;
+@import "./fonts";
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  z-index: -99;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-overlay p {
+
+  color: $fontLight;
+  background-color: rgba($backgroundColor, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'writtenFont', cursive ;
+  font-size: 100px;
+
+}
