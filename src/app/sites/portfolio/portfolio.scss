@@ -1,0 +1,20 @@
+
+.icon {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  &_r90{
+    @extend .icon;
+    rotate: 90deg;
+    bottom: 1%;
+    left: 0;
+
+  }
+  &_flip{
+    @extend .icon;
+    transform: scaleX(-1);
+    top: 1%;
+    left: 0;
+
+  }
+}

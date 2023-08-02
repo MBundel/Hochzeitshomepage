@@ -1,0 +1,17 @@
+.icon {
+  position: absolute;
+  width: 5%;
+  height: auto;
+
+  &_r90{
+  @extend .icon;
+    rotate: 90deg;
+
+
+  }
+  &_flip{
+  @extend .icon;
+    transform: scaleX(-1);
+
+  }
+}

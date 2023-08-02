@@ -2,8 +2,10 @@
 @import "./general_components/button";
 @import "./general_components/images";
 @import "./general_components/textContainer";
+@import "./general_components/icons";
 
 .container {
+  position: relative;
   margin: 5%;
   min-height: 30px;
   min-width: 20px;
@@ -16,8 +18,9 @@
     box-shadow: 1px -1px 20px 1px rgba($backgroundColor, 0.4);
     transition: 200ms;
   }
+
   & > * > p {
-    padding-left:  10px;
+    padding-left: 10px;
     padding-right: 10px;
   }
 
@@ -29,7 +32,13 @@
     order: 2;
   }
 
-  &:nth-child(even) > .img {
+  &:nth-child(even) .img {
     order: 1;
   }
+
+  .container:nth-of-type(2n) .description .icon_flip,
+  .container:nth-of-type(2n) .description .icon_r90 {
+    right: 0;
+  }
 }
+

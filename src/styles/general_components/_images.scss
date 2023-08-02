@@ -26,7 +26,18 @@
   background-color: rgba($backgroundColor, 0.5);
   padding: 10px 20px;
   border-radius: 5px;
-  font-family: 'writtenFont', cursive ;
+  font-family: 'writtenFont', cursive;
   font-size: 100px;
 
 }
+
+.img {
+  width: 40%;
+  height: 26%;
+  margin: 10px;
+  border-radius: 20px;
+  //box-shadow: 1px 1px 5px 5px rgba($backgroundColor, .1);
+
+}
+
+
