@@ -16,3 +16,15 @@
   }
 
 }
+
+.tc-info {
+  border: solid 2px $mainColor;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto auto;
+  padding: 10px;
+
+  & > h1{
+    text-align: center;
+  }
+}

@@ -12,7 +12,8 @@ import { NavbarComponent } from './site_components/navbar/navbar.component';
 import { FooterComponent } from './site_components/footer/footer.component';
 import { HomeComponent } from './sites/home/home.component';
 import { PortfolioComponent } from './sites/portfolio/portfolio.component';
-import { ContactComponent } from './sites/contact/contact.component'
+import { ContactComponent } from './sites/contact/contact.component';
+import { ImpressumComponent } from './sites/impressum/impressum.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactComponent } from './sites/contact/contact.component'
     FooterComponent,
     HomeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
