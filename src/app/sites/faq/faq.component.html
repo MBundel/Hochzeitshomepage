@@ -1,0 +1,10 @@
+<div class="accordion-container">
+  <div class="accordion-title" *ngFor="let fa of faqList; let i = index" (click)="toggleContent(i)">
+    <h2>{{ fa.frage }}</h2>
+    <div class="accordion-content" *ngIf="isOpen[i]">
+      <p>{{ fa.antwort }}</p>
+    </div>
+  </div>
+</div>
+
+

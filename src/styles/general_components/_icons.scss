@@ -1,3 +1,6 @@
+@use "../colors" as *;
+
+
 .icon {
   position: absolute;
   width: 5%;
@@ -14,4 +17,16 @@
     transform: scaleX(-1);
 
   }
+  &_color1{
+    fill: $mainColor;
+    img {
+      filter: invert(42%) sepia(100%) saturate(7467%) hue-rotate(334deg) brightness(98%) contrast(102%);
+    }
+  }
+
+  svg{
+    color: red;
+  }
+
+
 }

@@ -13,7 +13,9 @@ import { FooterComponent } from './site_components/footer/footer.component';
 import { HomeComponent } from './sites/home/home.component';
 import { PortfolioComponent } from './sites/portfolio/portfolio.component';
 import { ContactComponent } from './sites/contact/contact.component';
-import { ImpressumComponent } from './sites/impressum/impressum.component'
+import { ImpressumComponent } from './sites/impressum/impressum.component';
+import { FaqComponent } from './sites/faq/faq.component';
+import { CallToActionComponent } from './site_components/call-to-action/call-to-action.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ImpressumComponent } from './sites/impressum/impressum.component'
     HomeComponent,
     PortfolioComponent,
     ContactComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    FaqComponent,
+    CallToActionComponent
   ],
   imports: [
     BrowserModule,

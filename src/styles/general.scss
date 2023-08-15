@@ -3,42 +3,8 @@
 @import "./general_components/images";
 @import "./general_components/textContainer";
 @import "./general_components/icons";
+@import "./general_components/accordion";
+@import "./general_components/container";
 
-.container {
-  position: relative;
-  margin: 5%;
-  min-height: 30px;
-  min-width: 20px;
-  display: flex;
-  padding: 10px;
-  transition: 200ms;
-  box-shadow: 1px -1px 30px 1px rgba($backgroundColor, 0.1);
 
-  &:hover {
-    box-shadow: 1px -1px 20px 1px rgba($backgroundColor, 0.4);
-    transition: 200ms;
-  }
-
-  & > * > p {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  & > .img {
-    flex: 1;
-  }
-
-  &:nth-child(even) .description {
-    order: 2;
-  }
-
-  &:nth-child(even) .img {
-    order: 1;
-  }
-
-  .container:nth-of-type(2n) .description .icon_flip,
-  .container:nth-of-type(2n) .description .icon_r90 {
-    right: 0;
-  }
-}
 
