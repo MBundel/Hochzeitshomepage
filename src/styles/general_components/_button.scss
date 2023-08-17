@@ -16,8 +16,9 @@
   transition: background 2000ms, box-shadow 200ms, background-color 200ms;
 
   &:hover {
-    background: $secondAccent;
+    background: $secondMain;
     box-shadow: 2px 2px 10px 1px $backgroundColor;
+
   }
 
   &:active {
@@ -34,8 +35,11 @@
   &_cta {
     @extend .buttonClass;
     color: $fontDark;
-    background: $mainColor;
+    background: $secondAccent;
     height: 50px;
     width: 300px;
+    &:hover{
+      background: $mainColor;
+    }
   }
 }

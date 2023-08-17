@@ -1,20 +1,31 @@
 @use "../../../styles/colors" as *;
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  //position: fixed;
+  //left: 0;
+  //bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: printFont, serif;
   background: $backgroundColor;
+  margin: 0 ;
 
-  &>a {
+  &> * > a {
     text-decoration: none;
     color: $fontLight;
     &:hover{
-      color: $accentColor
+      color: $mainColor;
+      cursor: pointer;
     }
   }
+}
+
+.link-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 100px;
+  padding: 5px;
+  margin: 10px;
 }

@@ -1,0 +1,32 @@
+@use './colors' as *;
+@import "./general_components/icons";
+
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 100px;
+  width:  100px;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 40px;
+  transition: 400ms;
+  box-shadow: 1px -1px 20px 1px rgba($backgroundColor, 0.4);
+
+
+  &:hover{
+    rotate: 360deg;
+    transition: 400ms;
+    box-shadow: 2px -2px 20px 2px rgba($backgroundColor, 0.6);
+    transform: scale(1.1);
+
+    & > * {
+      rotate: -360deg;
+      transition: 500ms;
+    }
+  }
+}
+
+

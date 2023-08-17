@@ -6,5 +6,35 @@
 @import "./general_components/accordion";
 @import "./general_components/container";
 
+.box-mainColor {
+  background: $mainColor;
+}
 
+.box-secondMain {
+  background: $secondMain;
+}
+
+.box-accentColor {
+  background: $accentColor;
+
+  &:hover{
+    background: $secondAccent;
+  }
+}
+
+.box-secondAccent {
+  background: $secondAccent;
+}
+
+.box-background {
+  background: $backgroundColor;
+}
+
+.box-fontDark {
+  background: $fontDark;
+}
+
+.box-fontLight {
+  background: $fontLight;
+}
 
