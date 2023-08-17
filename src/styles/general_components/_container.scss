@@ -2,13 +2,40 @@
 @import "./fonts";
 
 
+.container {
+  display: flex;
 
-
-.container{
-   display: flex;
-
-  &_c{
+  &_c {
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
     width: 60%;
     margin: 80px auto;
+    //border: 1px solid $accentColor;
+    border-radius: 15px;
+
+    padding: 10px;
   }
+
+  &_icon {
+    align-items: center;
+    width: 120px;
+    height: 130px;
+
+  }
+
+  &_form {
+    @extend .container_c;
+    font-family: quicksand, sans-serif;
+    padding: 100px;
+    justify-content: start;
+    align-items: center;
+    background: $secondMain;
+    box-shadow: -2px 1px 3px 1px rgba($backgroundColor, .5);
+    font-size: 2vh;
+
+
+  }
+
+
 }

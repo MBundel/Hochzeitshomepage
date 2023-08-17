@@ -4,7 +4,7 @@
   <div *ngFor="let link of links" class="link-container">
     <a [routerLink]="link.routerLink" *ngIf="link.routerLink; else externalLink">
       <div class="icon-container">
-        <svg [attr.width]="link.iconWidth" height="auto">
+        <svg [attr.width]="link.iconWidth" height="80px">
           <image [attr.xlink:href]="link.iconUrl" width="100%" height="100%" />
         </svg>
       </div>
@@ -12,7 +12,7 @@
     <ng-template #externalLink>
       <a [href]="link.href" target="_blank" rel="noopener noreferrer">
         <div class="icon-container box-accentColor">
-          <svg [attr.width]="link.iconWidth" height="auto">
+          <svg [attr.width]="link.iconWidth" height="80px">
             <image [attr.xlink:href]="link.iconUrl" width="100%" height="100%" />
           </svg>
         </div>
