@@ -1,0 +1,90 @@
+{
+  "name": "weddingHP",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "apps/weddingHP/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/apps/weddingHP",
+        "index": "apps/weddingHP/src/index.html",
+        "main": "apps/weddingHP/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/weddingHP/tsconfig.app.json",
+        "assets": [
+          "apps/weddingHP/src/favicon.ico",
+          "apps/weddingHP/src/assets"
+        ],
+        "styles": ["apps/weddingHP/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "weddingHP:build:production"
+        },
+        "development": {
+          "browserTarget": "weddingHP:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "weddingHP:build"
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "tsConfig": "apps/weddingHP/tsconfig.spec.json",
+        "assets": [
+          "apps/weddingHP/src/favicon.ico",
+          "apps/weddingHP/src/assets"
+        ],
+        "styles": ["apps/weddingHP/src/styles.css"],
+        "scripts": []
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "version": 2,
+        "browserTarget": "weddingHP:build:production"
+      }
+    }
+  }
+}

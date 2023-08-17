@@ -1,0 +1,10 @@
+@import '../../../styles/general_components/button';
+
+.cta-class {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 60px auto;
+  justify-items: center;
+  align-items: center;
+}

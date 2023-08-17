@@ -1,0 +1,11 @@
+@use '../colors' as *;
+@import './fonts';
+
+.container {
+  display: flex;
+
+  &_c {
+    width: 60%;
+    margin: 80px auto;
+  }
+}
