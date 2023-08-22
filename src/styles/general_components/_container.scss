@@ -33,3 +33,18 @@
 
 
 }
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+
+    &_c {
+      width: 90%;
+      padding-left: 1%;
+    }
+
+    &_icon {
+      margin: 20px;
+    }
+  }
+}
