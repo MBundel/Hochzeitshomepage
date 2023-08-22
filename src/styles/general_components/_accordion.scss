@@ -31,7 +31,6 @@
 
 
 .accordion-content {
-
   padding: 10px;
 
 }
@@ -46,13 +45,15 @@
 
   .accordion-container {
     width: 90%;
-
   }
-
   .accordion-title {
     & > h2 {
       font-weight: normal;
 
     }
+  }
+  .accordion-content p{
+    font-size: 15px;
+
   }
 }
