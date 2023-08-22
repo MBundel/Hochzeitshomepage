@@ -43,12 +43,12 @@
   }
 
   .contact-overlay {
-    background-color: transparent;
-    color:  $backgroundColor;
+    background-color: rgba($backgroundColor, 0.5);
+
   }
 
   .contactBackground{
-    background-image: none;
+    background-image: url("../../../assets/images/kontakthintergrundKlein.png");
 
   }
 }
