@@ -2,7 +2,6 @@
 
 .contact-info{
   display: flex;
-  //background: $mainColor;
   color: $fontLight;
   text-shadow: 10px 10px 10px $fontDark ;
   font-family: printFont, serif;
@@ -12,16 +11,7 @@
   min-width: 360px;
   height: 100px;
   border-radius: 25px;
-
-
   font-size: 30px;
-
-
-  //&:hover{
-  //  background: $secondAccent;
-  //  transform: scale(1.1);
-  //  transition: background-color 400ms, transform 400ms;
-  //}
 
 }
 
@@ -41,6 +31,22 @@
   background-color: rgba($backgroundColor, 0.3);
   border-radius: 2px;
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .contact-info{
+    min-width: 260px;
+    height: 100px;
+    border-radius: 25px;
+    font-size: 30px;
+
+  }
+
+  .contact-overlay {
+    background-color: rgba($backgroundColor, 0.3);
+    border-radius: 2px;
+    padding: 5px;
+  }
 }
 
 
