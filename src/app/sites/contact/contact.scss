@@ -1,0 +1,46 @@
+@use "../../../styles/colors" as *;
+
+.contact-info{
+  display: flex;
+  //background: $mainColor;
+  color: $fontLight;
+  text-shadow: 10px 10px 10px $fontDark ;
+  font-family: printFont, serif;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  min-width: 360px;
+  height: 100px;
+  border-radius: 25px;
+
+
+  font-size: 30px;
+
+
+  //&:hover{
+  //  background: $secondAccent;
+  //  transform: scale(1.1);
+  //  transition: background-color 400ms, transform 400ms;
+  //}
+
+}
+
+.info-wrapper{
+  position: relative;
+}
+
+.contactBackground{
+  background-image: url("../../../assets/images/kontakthintergrund.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.contact-overlay {
+  background-color: rgba($backgroundColor, 0.3);
+  border-radius: 2px;
+  padding: 5px;
+}
+
+

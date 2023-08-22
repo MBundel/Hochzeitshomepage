@@ -16,6 +16,8 @@ import { ContactComponent } from './sites/contact/contact.component';
 import { ImpressumComponent } from './sites/impressum/impressum.component';
 import { FaqComponent } from './sites/faq/faq.component';
 import { CallToActionComponent } from './site_components/call-to-action/call-to-action.component'
+import {NgOptimizedImage} from "@angular/common";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { CallToActionComponent } from './site_components/call-to-action/call-to-
     FaqComponent,
     CallToActionComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // provideAnalytics(() => getAnalytics()),
-    // provideStorage(() => getStorage())
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage,
+        RouterModule,
+      // provideFirebaseApp(() => initializeApp(environment.firebase)),
+        // provideAnalytics(() => getAnalytics()),
+        // provideStorage(() => getStorage())
+    ],
   providers: [
     // ScreenTrackingService,UserTrackingService
   ],

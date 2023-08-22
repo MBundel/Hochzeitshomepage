@@ -2,24 +2,22 @@
 @import "./general_components/button";
 @import "./general_components/images";
 @import "./general_components/textContainer";
-@import "./general_components/icons";
-@import "./general_components/accordion";
+//@import "./general_components/icons";
+//@import "./general_components/accordion";
 @import "./general_components/container";
 
-.box-mainColor {
-  background: $mainColor;
+.box-accentColor {
+  background: $accentColor;
 }
 
 .box-secondMain {
   background: $secondMain;
 }
 
-.box-accentColor {
-  background: $accentColor;
+.box-mainColor {
+  background: $mainColor;
 
-  &:hover{
-    background: $secondAccent;
-  }
+
 }
 
 .box-secondAccent {

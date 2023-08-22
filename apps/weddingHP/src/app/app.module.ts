@@ -18,27 +18,30 @@ import { FaqComponent } from './sites/faq/faq.component';
 import { CallToActionComponent } from './site_components/call-to-action/call-to-action.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    HomeComponent,
-    PortfolioComponent,
-    ContactComponent,
-    ImpressumComponent,
-    FaqComponent,
-    CallToActionComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // provideAnalytics(() => getAnalytics()),
-    // provideStorage(() => getStorage())
-  ],
-  providers: [
-    // ScreenTrackingService,UserTrackingService
-  ],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        HomeComponent,
+        PortfolioComponent,
+        ContactComponent,
+        ImpressumComponent,
+        FaqComponent,
+        CallToActionComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        // provideFirebaseApp(() => initializeApp(environment.firebase)),
+        // provideAnalytics(() => getAnalytics()),
+        // provideStorage(() => getStorage())
+    ],
+    providers: [
+        // ScreenTrackingService,UserTrackingService
+    ],
+    bootstrap: [AppComponent],
+    exports: [
+        CallToActionComponent
+    ]
 })
 export class AppModule {}

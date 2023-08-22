@@ -1,42 +1,31 @@
+<!--<img class="backgroundIMG" src="assets/images/kontakthintergrund.jpg" alt="hintergrundbild">-->
+
+
+<div class="backgroundIMG">
 <div class="container_c">
 
   <div>
-
-
     <div *ngFor="let contactLink of contactLinks" class="container_icon">
-      <a [href]="contactLink.href" target="_blank" rel="noopener noreferrer">
-        <div class="icon-container box-accentColor">
-          <svg [attr.width]="contactLink.iconWidth" height="auto">
-            <image [attr.xlink:href]="contactLink.iconUrl" width="100%" height="100%"/>
-          </svg>
+
+      <div class="contact-info">
+        <div class="zoomBox">
+          <a [href]="contactLink.href" target="_blank" rel="noopener noreferrer">
+            <div class="icon-container box-accentColor">
+              <svg [attr.width]="contactLink.iconWidth" height="auto">
+                <image [attr.xlink:href]="contactLink.iconUrl" width="100%" height="100%"/>
+              </svg>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
+        <div class="contact-overlay">
 
-  <div ng-app="formApp" ng-controller="formController" class="container_form">
-
-
-    <form ng-submit="submitForm()">
-      <div>
-       <p> 0176 844 15706  &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;  michel@bundel.eu</p>
-
+          {{contactLink.text}}
+        </div>
       </div>
-
-      <label for="name">Dein Name:</label>
-      <input type="text" id="name" ng-model="formData.name" required><br>
-
-      <label for="kontaktdaten">Wie kann ich dich am besten erreichen:</label>
-      <input type="text" id="kontaktdaten" ng-model="formData.kontaktdaten" required><br>
-
-      <label for="text">Deine Anfrage und Eckdaten:</label>
-      <input id="text" required/><br>
-
-      <button class="buttonClass" type="submit">Anfrage absenden</button>
-    </form>
-
+    </div>
 
   </div>
+  </div>
 
-</div>
+  </div>
 

@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
-  styleUrls: ['../../../styles/general.scss']
+  styleUrls: ['../../../styles/general_components/_accordion.scss']
 })
 export class FaqComponent {
 

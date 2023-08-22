@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@import "../colors";
 @import "./fonts";
 
 
@@ -12,5 +12,17 @@
 
   & > h1{
     text-align: center;
+  }
+}
+
+.text {
+  font-family: quicksand, sans-serif;
+  color: $fontLight;
+  padding: 30px;
+  font-size: 20px;
+
+  & > h1 {
+    font-family: printFont, serif;
+    font-weight: 100;
   }
 }
