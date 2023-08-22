@@ -1,8 +1,46 @@
 @use  "../../../styles/colors" as *;
+@import "../../../styles/general_components/button";
 
 .navbar {
   display: flex;
   justify-content: space-around;
   background: $backgroundColor;
   padding: 5px;
+}
+
+/* Standardmäßig wird das Menü angezeigt */
+.menu {
+  display: flex;
+}
+
+/* Burger-Button für Desktops ausblenden */
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column-reverse;
+  }
+
+
+  .menu.active {
+    display: flex;
+  }
+
+  /* Burger-Button für Mobilgeräte anzeigen */
+  .menu-toggle {
+    display: block;
+
+  }
+  .navbar{
+    justify-content: right;
+
+    & > button {
+      font-size: 10px;
+    }
+  }
 }

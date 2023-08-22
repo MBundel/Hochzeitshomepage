@@ -1,10 +1,16 @@
-
 <div class="navbar">
-  <button class="buttonClass_b" [routerLink]="['/']">Home</button>
-  <button class="buttonClass_b" [routerLink]="['/portfolio']">Portfolio</button>
-  <button class="buttonClass_b" [routerLink]="['/kontakt']">Kontakt</button>
-  <button class="buttonClass_b" [routerLink]="['/faq']">FAQ</button>
-  <button class="buttonClass_b" [routerLink]="['/about-me']">About me</button>
 
+    <div class="icon-container  menu-toggle" (click)="isMenuOpen = !isMenuOpen">
+      <svg width="50px" height="50px">
+        <image href="/assets/icons/burger.svg" width="100%" height="100%" />
+      </svg>
+    </div>
 
+  <div class="menu" [ngClass]="{'active': isMenuOpen}">
+    <button class="buttonClass_b" [routerLink]="['/']">Home</button>
+    <button class="buttonClass_b" [routerLink]="['/portfolio']">Portfolio</button>
+    <button class="buttonClass_b" [routerLink]="['/kontakt']">Kontakt</button>
+    <button class="buttonClass_b" [routerLink]="['/faq']">FAQ</button>
+    <button class="buttonClass_b" [routerLink]="['/about-me']">About me</button>
+  </div>
 </div>

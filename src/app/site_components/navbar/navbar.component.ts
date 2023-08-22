@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['../../../styles/general.scss', './navbar.component.scss']
 })
 export class NavbarComponent {
+  isMenuOpen: boolean = false;
 
 }
