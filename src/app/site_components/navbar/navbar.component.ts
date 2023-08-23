@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   isMenuOpen: boolean = false;
 
+  menuItems = [
+    { route: '/',           label: 'Home' },
+    { route: '/portfolio',  label: 'Portfolio' },
+    { route: '/kontakt',    label: 'Kontakt' },
+    { route: '/faq',        label: 'FAQ' },
+    { route: '/about-me',   label: 'About me' }
+  ];
+
 }

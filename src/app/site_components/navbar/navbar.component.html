@@ -7,10 +7,12 @@
     </div>
 
   <div class="menu" [ngClass]="{'active': isMenuOpen}">
-    <button class="buttonClass_b" [routerLink]="['/']">Home</button>
-    <button class="buttonClass_b" [routerLink]="['/portfolio']">Portfolio</button>
-    <button class="buttonClass_b" [routerLink]="['/kontakt']">Kontakt</button>
-    <button class="buttonClass_b" [routerLink]="['/faq']">FAQ</button>
-    <button class="buttonClass_b" [routerLink]="['/about-me']">About me</button>
+    <button *ngFor="let item of menuItems"
+            (click)="isMenuOpen = !isMenuOpen"
+            class="buttonClass_b"
+            [routerLink]="[item.route]">
+      {{ item.label }}
+    </button>
+
   </div>
 </div>
