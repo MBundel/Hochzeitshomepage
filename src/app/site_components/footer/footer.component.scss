@@ -9,12 +9,13 @@
   justify-content: space-around;
   font-family: printFont, serif;
   background: $backgroundColor;
-  margin: 0 ;
+  margin: 0;
 
-  &> * > a {
+  & > * > a {
     text-decoration: none;
     color: $fontLight;
-    &:hover{
+
+    &:hover {
       color: $accentColor;
       cursor: pointer;
     }
@@ -32,19 +33,31 @@
     display: flex;
     align-items: center;
   }
-  & > div> a {
+
+  & > div > a {
     text-decoration: none;
-    color:  $fontLight;
+    color: $fontLight;
   }
 
 }
 
 @media (max-width: 768px) {
 
-  .footer{
+  .footer {
     display: grid;
     justify-content: center;
 
+
   }
+
+  .link-container {
+    justify-content: left;
+  }
+  .icon-container{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    }
+
 
 }
