@@ -1,88 +1,54 @@
 @use '../../../styles/colors' as *;
 
-.icon {
-  position: absolute;
-  width: 5%;
-  height: auto;
-  &_r90{
-    @extend .icon;
-    rotate: 90deg;
-    bottom: 1%;
-    left: 0;
-
-  }
-  &_flip{
-    @extend .icon;
-    transform: scaleX(-1);
-    top: 1%;
-    left: 0;
-
-  }
-}
-
 
 .container {
-  position: relative;
-  margin: 5%;
-  min-height: 30px;
-  min-width: 20px;
+
   display: flex;
-  padding: 10px;
-  transition: 200ms;
-  box-shadow: 1px -1px 30px 1px rgba($backgroundColor, 0.1);
+  box-shadow: 1px 1px 5px 2px rgba($mainColor, .2);
+  padding: 0;
+  width: 80%;
+  margin: 5% auto;
+  max-height: 500px;
+  border-radius: 5px;
+  transition: 400ms;
+  color: $fontDark;
 
   &:hover {
-    box-shadow: 1px -1px 20px 1px rgba($backgroundColor, 0.4);
-    transition: 200ms;
+    box-shadow: 1px 1px 10px 5px rgba($mainColor, .4);
+    transition: 400ms;
   }
 
-  & > * > p {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  & > .img {
-    flex: 1;
-  }
-
-  &:nth-child(even) .description {
-    order: 2;
-  }
-
-  &:nth-child(even) .img {
-    order: 1;
-  }
-
-  .container:nth-of-type(2n) .description .icon_flip,
-  .container:nth-of-type(2n) .description .icon_r90 {
-    right: 0;
-  }
-}
-
-.description {
-  & > h2 {
-    font-family: scriptin, cursive;
-    font-size: 4em;
-    letter-spacing: 5px;
-    color: $backgroundColor;
+  & .description {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
+
+    & h2 {
+      font-family: writtenFont, cursive;
+      font-size: 3em;
+    }
+
+    font-family: quicksand, sans-serif;
+
+    & p {
+
+    }
   }
 
-  & > p {
-    font-family: writtenFont, cursive;
-    font-size: 3em;
+  & .portfolioImgContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 
+  & img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+  }
 }
 
-.tc-info {
-  border: solid 2px $accentColor;
-  border-radius: 10px;
-  width: 50%;
-  margin: 20px auto auto;
-  padding: 10px;
 
-  & > h1{
-    text-align: center;
-  }
-}
