@@ -1,8 +1,6 @@
 @use '../../../styles/colors' as *;
 
-
 .container {
-
   display: flex;
   box-shadow: 1px 1px 5px 2px rgba($mainColor, .2);
   padding: 0;
@@ -19,7 +17,6 @@
   }
 
   & .description {
-    width: 50%;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -31,12 +28,10 @@
 
     font-family: quicksand, sans-serif;
 
-    & p {
-
-    }
   }
 
   & .portfolioImgContainer {
+    flex: 1;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -51,4 +46,45 @@
   }
 }
 
+.left {
+  flex: 1;
+  width: 50%;
+  display: grid;
+}
 
+.leftDown {
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+
+  & img {
+    max-width: 33.33%;
+    border-radius: 0;
+    border-top: 2px solid $mainColor;
+    object-fit: cover;
+  }
+
+  img:first-child {
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+
+    & .portfolioImgContainer {
+      width: 100%;
+      min-height: 200px;
+    }
+
+    .left {
+      width: 100%;
+
+      & img{
+        border-radius: 0;
+      }
+    }
+  }
+}
