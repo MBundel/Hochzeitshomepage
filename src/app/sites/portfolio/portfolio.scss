@@ -1,90 +1,26 @@
 @use '../../../styles/colors' as *;
 
-.container {
-  display: flex;
-  box-shadow: 1px 1px 5px 2px rgba($mainColor, .2);
-  padding: 0;
-  width: 80%;
-  margin: 5% auto;
-  max-height: 500px;
-  border-radius: 5px;
-  transition: 400ms;
-  color: $fontDark;
-
-  &:hover {
-    box-shadow: 1px 1px 10px 5px rgba($mainColor, .4);
-    transition: 400ms;
-  }
-
-  & .description {
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-
-    & h2 {
-      font-family: writtenFont, cursive;
-      font-size: 3em;
-    }
-
-    font-family: quicksand, sans-serif;
-
-  }
-
-  & .portfolioImgContainer {
-    flex: 1;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  & img {
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 0 5px 5px 0;
-  }
-}
-
-.left {
-  flex: 1;
-  width: 50%;
+.galerie {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.leftDown {
-  display: flex;
-  max-width: 100%;
-  overflow: hidden;
+.galerie img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  & img {
-    max-width: 33.33%;
-    border-radius: 0;
-    border-top: 2px solid $mainColor;
-    object-fit: cover;
-  }
-
-  img:first-child {
-    border-bottom-left-radius: 5px;
-  }
+.galerie img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1400px) {
-  .container {
-    flex-direction: column;
-    height: auto;
 
-    & .portfolioImgContainer {
-      width: 100%;
-      min-height: 200px;
-    }
-
-    .left {
-      width: 100%;
-
-      & img{
-        border-radius: 0;
-      }
-    }
-  }
 }

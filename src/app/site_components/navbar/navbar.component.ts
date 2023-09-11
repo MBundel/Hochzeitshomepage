@@ -13,7 +13,7 @@ export class NavbarComponent {
     { route: '/portfolio',  label: 'Portfolio' },
     { route: '/kontakt',    label: 'Kontakt' },
     { route: '/faq',        label: 'FAQ' },
-    { route: '/about-me',   label: 'About me' }
+    // { route: '/about-me',   label: 'About me' }
   ];
 
 }
